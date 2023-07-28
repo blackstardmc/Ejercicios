@@ -12,7 +12,7 @@ class Hospital {
     fun sexTotM(): Int {
         var c = 0
         for (p in listPaciente) {
-            if (p.getSex()) {
+            if (p.sexo) {
                 c++
             }
         }
@@ -22,7 +22,7 @@ class Hospital {
     fun getCantPerMun(mun: String): Int {
         var c = 0
         for (x in listPaciente) {
-            if (mun == x.getMunicipio()) {
+            if (mun == x.municipio) {
                 c++
             }
         }
@@ -32,14 +32,14 @@ class Hospital {
     fun getEdadMedia(): Double {
         var a = 0.0
         for (x in listPaciente) {
-            a += x.getEdad()
+            a += x.edad
         }
         return a / listPaciente.size
     }
 
     fun ifExistPaciente(id: String): Boolean {
         for (x in listPaciente) {
-            if (x.getId() == id) {
+            if (x.id == id) {
                 return true
                 break
             }

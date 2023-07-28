@@ -1,6 +1,7 @@
 
 import exercises.ex_1.Hospital
 import exercises.ex_1.Paciente
+import exercises.ex_2.Central
 
 fun main(){
     val h=Hospital()
@@ -12,7 +13,5 @@ fun main(){
     h.addPaciente(Paciente("Julio","asd",23,2,23,"Santiago",false))
 
 
-
-
-    println(h.getPosPaciente(4).getName())
+    println(h.getPosPaciente(4).name)
 }
